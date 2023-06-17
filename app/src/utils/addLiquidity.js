@@ -22,7 +22,7 @@ export const addLiquidity = async (
       EXCHANGE_CONTRACT_ABI,
       signer
     );
-
+console.log('here 1');
     let tx = await tokenContract.approve(
       EXCHANGE_CONTRACT_ADDRESS,
       addCDAmountWei.toString()
@@ -30,6 +30,7 @@ export const addLiquidity = async (
 
     await tx.wait();
 
+    console.log('here 2');
     tx = await exchangeContract.addLiquidity(
       addCDAmountWei,
       { value: addEtherAmountWei }

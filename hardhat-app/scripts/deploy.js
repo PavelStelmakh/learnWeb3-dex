@@ -10,7 +10,7 @@ async function main() {
 
   // await deployedExchangeContract.waitForDeployment();
 
-  console.log('Exchange Contract Address: ', deployedExchangeContract.address); // Exchange Contract Address: 0x8A3F3e9021FF230B171475617d13d0C8F600FB04
+  console.log('Exchange Contract Address: ', deployedExchangeContract.address); // Exchange Contract Address: 0x3a26d3b827dD1C84DB118a12c67F3E2aEc49F422
 }
 
 main().catch((error) => {
